@@ -1,0 +1,213 @@
+---
+/**
+ * TECHNICAL SPECIFICATIONS SECTION
+ * Three tabbed data tables with horizontal scroll on mobile.
+ */
+---
+
+<section id="specifications" class="py-20 bg-gray-50" data-ps="src/components/home/Specifications.astro:dx5gmz">
+  <div class="container mx-auto px-4" data-ps="src/components/home/Specifications.astro:1jwpwi">
+    <div class="max-w-4xl mb-12" data-aos="fade-up" data-ps="src/components/home/Specifications.astro:1jwpwh">
+      <p class="text-[#E85D1A] font-bold text-sm tracking-widest uppercase mb-3" data-ps="src/components/home/Specifications.astro:33z4o9">TECHNICAL DATA</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0f172a] leading-tight mb-6" data-ps="src/components/home/Specifications.astro:uwsx1o">
+        Standard <span class="text-[#E85D1A]" data-ps="src/components/home/Specifications.astro:9wvuuo">Specifications</span>
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed" data-ps="src/components/home/Specifications.astro:33z4o8">
+        Representative specifications from our standard product range. All parameters including voltage class, capacity, cooling configuration, and tap changer arrangement can be customised to meet Nigerian grid codes and your specific project requirements.
+      </p>
+    </div>
+
+    <!-- Tabs Container -->
+    <div class="w-full" data-aos="fade-up" data-ps="src/components/home/Specifications.astro:dsq86v">
+      <!-- Tab Headers -->
+      <div class="flex overflow-x-auto border-b border-gray-200 no-scrollbar mb-8" data-ps="src/components/home/Specifications.astro:dsq86u">
+        <button 
+          role="tab" 
+          aria-selected="true" 
+          aria-controls="panel-distribution" 
+          id="tab-distribution"
+          class="tab-btn px-6 py-4 text-sm font-bold uppercase tracking-wider transition-all border-b-2 border-[#E85D1A] text-[#E85D1A] whitespace-nowrap"
+          data-target="panel-distribution"
+         data-ps="src/components/home/Specifications.astro:58lgiw">
+          Distribution Transformers
+        </button>
+        <button 
+          role="tab" 
+          aria-selected="false" 
+          aria-controls="panel-power" 
+          id="tab-power"
+          class="tab-btn px-6 py-4 text-sm font-bold uppercase tracking-wider transition-all border-b-2 border-transparent text-gray-600 hover:text-slate-900 whitespace-nowrap"
+          data-target="panel-power"
+         data-ps="src/components/home/Specifications.astro:58lgia">
+          Power Transformers
+        </button>
+        <button 
+          role="tab" 
+          aria-selected="false" 
+          aria-controls="panel-single" 
+          id="tab-single"
+          class="tab-btn px-6 py-4 text-sm font-bold uppercase tracking-wider transition-all border-b-2 border-transparent text-gray-600 hover:text-slate-900 whitespace-nowrap"
+          data-target="panel-single"
+         data-ps="src/components/home/Specifications.astro:58lgi9">
+          Single Phase Units
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="relative overflow-hidden" data-ps="src/components/home/Specifications.astro:dsq86t">
+        <!-- Distribution Transformers Panel -->
+        <div id="panel-distribution" role="tabpanel" class="tab-panel active transition-all duration-300" data-ps="src/components/home/Specifications.astro:dsq86s">
+          <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200" data-ps="src/components/home/Specifications.astro:dsq86r">
+            <table class="w-full text-left border-collapse">
+              <thead class="bg-slate-900 text-white uppercase text-xs tracking-wider">
+                <tr>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Rating (kVA)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Primary (kV)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Secondary (V)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Phases</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Cooling</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">No-Load Loss (W)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Load Loss (W)</th>
+                  <th class="px-6 py-4 font-bold bg-slate-900 whitespace-nowrap">Standard</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-100">
+                <tr><td class="px-6 py-4 font-bold text-slate-900">25</td><td class="px-6 py-4 text-gray-600">6.3 / 10 / 11</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">65</td><td class="px-6 py-4 text-gray-600">450</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">50</td><td class="px-6 py-4 text-gray-600">6.3 / 10 / 11</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">110</td><td class="px-6 py-4 text-gray-600">750</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">100</td><td class="px-6 py-4 text-gray-600">6.3 / 10 / 11</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">180</td><td class="px-6 py-4 text-gray-600">1,250</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">160</td><td class="px-6 py-4 text-gray-600">10 / 11 / 20</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">260</td><td class="px-6 py-4 text-gray-600">1,750</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">250</td><td class="px-6 py-4 text-gray-600">10 / 11 / 20</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">360</td><td class="px-6 py-4 text-gray-600">2,350</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">400</td><td class="px-6 py-4 text-gray-600">10 / 11 / 20</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">520</td><td class="px-6 py-4 text-gray-600">3,250</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">630</td><td class="px-6 py-4 text-gray-600">10 / 11 / 33</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">750</td><td class="px-6 py-4 text-gray-600">4,600</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">1,000</td><td class="px-6 py-4 text-gray-600">11 / 20 / 33</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600">ONAN</td><td class="px-6 py-4 text-gray-600">1,050</td><td class="px-6 py-4 text-gray-600">6,500</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">1,600</td><td class="px-6 py-4 text-gray-600">11 / 20 / 33</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN / ONAF</td><td class="px-6 py-4 text-gray-600">1,500</td><td class="px-6 py-4 text-gray-600">9,500</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">2,500</td><td class="px-6 py-4 text-gray-600">11 / 20 / 33</td><td class="px-6 py-4 text-gray-600">400 / 230</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAF</td><td class="px-6 py-4 text-gray-600">2,100</td><td class="px-6 py-4 text-gray-600">13,500</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Power Transformers Panel -->
+        <div id="panel-power" role="tabpanel" class="tab-panel hidden transition-all duration-300" data-ps="src/components/home/Specifications.astro:dsq86q">
+          <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200" data-ps="src/components/home/Specifications.astro:dsq86p">
+            <table class="w-full text-left border-collapse">
+              <thead class="bg-slate-900 text-white uppercase text-xs tracking-wider">
+                <tr>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Rating (MVA)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Primary (kV)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Secondary (kV)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Phases</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Cooling</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Tap Changer</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Impedance (%)</th>
+                  <th class="px-6 py-4 font-bold bg-slate-900 whitespace-nowrap">Standard</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-100">
+                <tr><td class="px-6 py-4 font-bold text-slate-900">3.15</td><td class="px-6 py-4 text-gray-600">33 / 66</td><td class="px-6 py-4 text-gray-600">6.3 / 11</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC / DETC</td><td class="px-6 py-4 text-gray-600">6.25</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">5</td><td class="px-6 py-4 text-gray-600">33 / 66</td><td class="px-6 py-4 text-gray-600">6.3 / 11</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC / DETC</td><td class="px-6 py-4 text-gray-600">6.25</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">10</td><td class="px-6 py-4 text-gray-600">33 / 66 / 132</td><td class="px-6 py-4 text-gray-600">11 / 33</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN / ONAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">7.5</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">16</td><td class="px-6 py-4 text-gray-600">66 / 132</td><td class="px-6 py-4 text-gray-600">11 / 33</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">8.0</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">20</td><td class="px-6 py-4 text-gray-600">66 / 132</td><td class="px-6 py-4 text-gray-600">11 / 33</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">8.0</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">25</td><td class="px-6 py-4 text-gray-600">132 / 220</td><td class="px-6 py-4 text-gray-600">33 / 66</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">ONAF / OFAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">10.0</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">31.5</td><td class="px-6 py-4 text-gray-600">132 / 220</td><td class="px-6 py-4 text-gray-600">33 / 66</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">OFAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">10.0</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">40</td><td class="px-6 py-4 text-gray-600">132 / 220</td><td class="px-6 py-4 text-gray-600">33 / 66</td><td class="px-6 py-4 text-gray-600">3-Phase</td><td class="px-6 py-4 text-gray-600 uppercase">OFAF</td><td class="px-6 py-4 text-gray-600 uppercase">OLTC</td><td class="px-6 py-4 text-gray-600">12.5</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Single Phase Units Panel -->
+        <div id="panel-single" role="tabpanel" class="tab-panel hidden transition-all duration-300" data-ps="src/components/home/Specifications.astro:dsq86o">
+          <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200" data-ps="src/components/home/Specifications.astro:dsq86n">
+            <table class="w-full text-left border-collapse">
+              <thead class="bg-slate-900 text-white uppercase text-xs tracking-wider">
+                <tr>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Rating (kVA)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Primary (kV)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Secondary (V)</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Mounting</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Cooling</th>
+                  <th class="px-6 py-4 font-bold border-r border-slate-800 bg-slate-900 whitespace-nowrap">Application</th>
+                  <th class="px-6 py-4 font-bold bg-slate-900 whitespace-nowrap">Standard</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-100">
+                <tr><td class="px-6 py-4 font-bold text-slate-900">10</td><td class="px-6 py-4 text-gray-600">6.3 / 10 / 11</td><td class="px-6 py-4 text-gray-600">240 / 120</td><td class="px-6 py-4 text-gray-600">Pole-Mounted</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">Utility / Rural Electrification</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">25</td><td class="px-6 py-4 text-gray-600">6.3 / 10 / 11</td><td class="px-6 py-4 text-gray-600">240 / 120</td><td class="px-6 py-4 text-gray-600">Pole-Mounted</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">Utility / Rural Electrification</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">50</td><td class="px-6 py-4 text-gray-600">10 / 11 / 20</td><td class="px-6 py-4 text-gray-600">240 / 120</td><td class="px-6 py-4 text-gray-600">Pole-Mounted</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">Utility / Catenary</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-slate-900">100</td><td class="px-6 py-4 text-gray-600">10 / 11 / 20</td><td class="px-6 py-4 text-gray-600">240 / 120</td><td class="px-6 py-4 text-gray-600">Pole-Mounted</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">Utility / Catenary</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+                <tr><td class="px-6 py-4 font-bold text-[#E85D1A]">160</td><td class="px-6 py-4 text-gray-600">10 / 11 / 33</td><td class="px-6 py-4 text-gray-600">240 / 120</td><td class="px-6 py-4 text-gray-600">Pole-Mounted</td><td class="px-6 py-4 text-gray-600 uppercase">ONAN</td><td class="px-6 py-4 text-gray-600 uppercase">Catenary / Rail / Rural</td><td class="px-6 py-4 text-gray-600 uppercase">IEC 60076</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note Box -->
+    <div class="mt-12 bg-white p-8 border-l-4 border-[#E85D1A] shadow-sm" data-aos="fade-up" data-ps="src/components/home/Specifications.astro:dsq86m">
+      <p class="text-gray-700 leading-relaxed" data-ps="src/components/home/Specifications.astro:33z4o7">
+        All specifications shown are indicative standard values. Elsan Transformer provides custom engineering for non-standard voltage classes, capacity ratings, cooling configurations, and tap changer arrangements. Contact our engineering team with your project specifications for a tailored technical proposal and quotation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-target');
+
+        // Update Buttons
+        tabBtns.forEach(b => {
+          b.classList.remove('border-[#E85D1A]', 'text-[#E85D1A]');
+          b.classList.add('border-transparent', 'text-gray-600');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('border-[#E85D1A]', 'text-[#E85D1A]');
+        btn.classList.remove('border-transparent', 'text-gray-500');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Update Panels
+        tabPanels.forEach(p => {
+          p.classList.add('hidden');
+          p.classList.remove('active');
+        });
+        const activePanel = document.getElementById(target);
+        if (activePanel) {
+          activePanel.classList.remove('hidden');
+          setTimeout(() => activePanel.classList.add('active'), 50);
+        }
+      });
+    });
+  }
+
+  // Run on load
+  initTabs();
+  // Run on view transition (if using Astro View Transitions)
+  document.addEventListener('astro:after-swap', initTabs);
+</script>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .tab-panel {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-out;
+  }
+  .tab-panel.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>

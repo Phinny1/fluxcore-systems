@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Products from '@/components/home/Products.astro';
+import Industries from '@/components/home/Industries.astro';
+import Specifications from '@/components/home/Specifications.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+---
+
+<BaseLayout
+  title="Our Products | Elsan Transformer"
+  description="Explore our range of high-efficiency power and distribution transformers."
+>
+  <PageHero 
+    title="Products" 
+    subtitle="Engineered for reliability and performance in the most demanding grid conditions."
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+  
+  <Products />
+  <Specifications />
+  <Industries />
+  <QuotationRequest />
+</BaseLayout>

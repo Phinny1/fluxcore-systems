@@ -1,0 +1,67 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+
+const country = "Benin";
+---
+
+<BaseLayout
+  title={`Transformer in ${country} | Elsan Transformers`}
+  description={`Premier transformer solutions and power infrastructure for ${country}.`}
+>
+  <PageHero 
+    title={`Transformer in ${country}`}
+    subtitle={`Powering ${country}'s grid with high-efficiency distribution and power transformers.`}
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+  
+  <section class="py-16 bg-white" data-ps="src/pages/transformer-in-benin.astro:section1">
+    <div class="max-w-4xl mx-auto px-6" data-ps="src/pages/transformer-in-benin.astro:11ytzl">
+      <div class="prose prose-slate max-w-none prose-headings:text-primary" data-ps="src/pages/transformer-in-benin.astro:11ytzm">
+        <p class="lead text-xl text-slate-700 mb-12" data-ps="src/pages/transformer-in-benin.astro:p03fs9">
+          Elsan Transformer supplies certified power and distribution transformers to Benin Republic, manufactured in Turkey to IEC 60076 and ISO 9001:2015 standards, with full export logistics from Nigeria.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-6" data-ps="src/pages/transformer-in-benin.astro:jr7erx">Why Benin's Energy Sector Needs Reliable Transformer Supply</h2>
+        <p data-ps="src/pages/transformer-in-benin.astro:p03fs8">
+          Benin Republic's national electricity utility, SBEE (Société Béninoise d'Energie Electrique), operates a distribution network serving Cotonou, Porto-Novo, Parakou, and expanding rural communities across the country. Growing industrial activity in the Cotonou Free Zone, rising urban demand, and active rural electrification programmes have created sustained requirements for high-quality transformer equipment capable of performing reliably in West Africa's tropical climate.
+        </p>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-benin.astro:jr7erw">Elsan Transformer's Product Range for Benin</h2>
+        <p data-ps="src/pages/transformer-in-benin.astro:p03fs7">Elsan supplies the full capacity spectrum required by Benin's grid operators and contractors:</p>
+        <ul>
+          <li data-ps="src/pages/transformer-in-benin.astro:rlloc8"><strong>Distribution transformers:</strong> 25 kVA to 2,500 kVA — suitable for SBEE's 15 kV and 33 kV medium-voltage networks, available in pole-mounted and pad-mounted configurations</li>
+          <li data-ps="src/pages/transformer-in-benin.astro:rllocu"><strong>Power transformers:</strong> 3.15 MVA to 50 MVA — engineered for substation and transmission infrastructure projects</li>
+          <li data-ps="src/pages/transformer-in-benin.astro:rllocv"><strong>Single-phase units:</strong> up to 160 kVA — for rural electrification and last-mile access programmes</li>
+          <li data-ps="src/pages/transformer-in-benin.astro:rllocw"><strong>Solar PV transformers:</strong> custom-engineered for Benin's growing off-grid and hybrid renewable energy installations</li>
+        </ul>
+
+        <p data-ps="src/pages/transformer-in-benin.astro:p03fs6">
+          Every unit is oil-immersed, ONAN or ONAF cooled, and designed for continuous operation at the high ambient temperatures and humidity levels common across Benin's coastal and inland regions. Full factory routine testing — including ratio verification, insulation resistance, and load loss measurements to IEC 60076 — is completed before each unit is dispatched.
+        </p>
+
+        <h2 class="text-3xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-benin.astro:jr7erv">Technical Standards and Certifications</h2>
+        <p data-ps="src/pages/transformer-in-benin.astro:p03fs5">
+          Elsan transformers comply with IEC 60076, the internationally recognised standard for power transformers. The manufacturing facility holds ISO 9001:2015, ISO 14001, and ISO 45001 certifications. Type test reports and routine test certificates are provided with every order — meeting the documentation requirements of SBEE procurement processes and internationally financed infrastructure projects.
+        </p>
+
+        <div class="mt-16 pt-12 border-t border-slate-200" data-ps="src/pages/transformer-in-benin.astro:11ytzj">
+          <h2 class="text-3xl font-bold mb-8 text-center" data-ps="src/pages/transformer-in-benin.astro:jr7eru">Frequently Asked Questions</h2>
+          <div class="space-y-8" data-ps="src/pages/transformer-in-benin.astro:11ytzk">
+            <div data-ps="src/pages/transformer-in-benin.astro:11ytzl">
+              <h3 class="text-xl font-bold mb-3" data-ps="src/pages/transformer-in-benin.astro:k891wv">Can Elsan supply transformers directly to Benin Republic?</h3>
+              <p data-ps="src/pages/transformer-in-benin.astro:p03fs4">Yes. Elsan exports from Nigeria to Benin with full documentation and logistics coordination to Cotonou.</p>
+            </div>
+            <div data-ps="src/pages/transformer-in-benin.astro:11ytzm">
+              <h3 class="text-xl font-bold mb-3" data-ps="src/pages/transformer-in-benin.astro:k891wu">What voltage classes are available?</h3>
+              <p data-ps="src/pages/transformer-in-benin.astro:p03fs3">Units are available for 11 kV, 15 kV, 20 kV, and 33 kV primary voltage networks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <QuotationRequest />
+</BaseLayout>

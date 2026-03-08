@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Specifications from '@/components/home/Specifications.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+import Industries from '@/components/home/Industries.astro';
+---
+
+<BaseLayout
+  title="West Africa Export | Elsan Transformer"
+  description="Export-ready transformers for West African markets, with full logistics and documentation support."
+>
+  <PageHero 
+    title="West Africa Export" 
+    subtitle="Powering the region with world-class transformers exported from Nigeria to West Africa."
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-8-1024-1024.webp"
+  />
+
+  <section class="py-24 bg-white" data-ps="src/pages/west-africa-export.astro:bdbprc">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/west-africa-export.astro:b8wn7l">
+      <div class="grid md:grid-cols-2 gap-16 items-center" data-ps="src/pages/west-africa-export.astro:b8wn7m">
+        <div data-ps="src/pages/west-africa-export.astro:b8wn7n">
+          <h2 class="text-4xl font-black tracking-tighter text-slate-900 mb-6 uppercase" data-ps="src/pages/west-africa-export.astro:5j76g6">Regional Power Partner</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-ps="src/pages/west-africa-export.astro:xqudfl">
+            Supplying power and distribution transformers to Ghana, Togo, Benin Republic, Cameroon, and other West African countries — with full export documentation and logistics support. We are your trusted partner for cross-border power infrastructure projects.
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start gap-3" data-ps="src/pages/west-africa-export.astro:u7xckk">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/west-africa-export.astro:tk3pge"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/west-africa-export.astro:tk3pgf">Comprehensive export documentation handling</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/west-africa-export.astro:u7xckl">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/west-africa-export.astro:tk3pgg"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/west-africa-export.astro:tk3pgh">Logistics support for safe transport</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/west-africa-export.astro:u7xcl7">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/west-africa-export.astro:tk3pgi"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/west-africa-export.astro:tk3pgj">Compliance with regional standards (ECOWAS)</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/west-africa-export.astro:u7xcl8">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/west-africa-export.astro:tk3pgk"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/west-africa-export.astro:ai40nw">Dedicated support for international clients</span>
+            </li>
+          </ul>
+          <a href="/contact/" class="inline-block bg-[#E85D1A] text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-[#D04C0F] transition-colors" data-ps="src/pages/west-africa-export.astro:qgh61x">CONTACT US</a>
+        </div>
+        <div class="relative" data-ps="src/pages/west-africa-export.astro:b8wn7o">
+          <img
+            src="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-8-1024.webp"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Port Logistics" 
+            class="w-full h-auto shadow-2xl" data-ps="src/pages/west-africa-export.astro:imcbfp" />
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#E85D1A]/10 -z-10" data-ps="src/pages/west-africa-export.astro:b8wn7p"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Specifications />
+  <Industries />
+  <QuotationRequest />
+</BaseLayout>

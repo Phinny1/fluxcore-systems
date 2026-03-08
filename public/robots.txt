@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: ${import.meta.env.SITE_URL || 'https://elsantransformer.com.ng'}/sitemap-index.xml

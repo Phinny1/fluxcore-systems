@@ -1,0 +1,411 @@
+---
+// Navigation - working mobile menu + scroll glassmorphism
+import { SITE } from '@/config/site';
+
+export interface Props {
+  logo?: string;
+}
+
+const { logo = SITE.name } = Astro.props;
+---
+
+<header id="navbar" class="sticky top-0 z-50 bg-slate-950 backdrop-blur-lg transition-colors duration-300" data-ps="src/components/Navigation.astro:dt8k86">
+  <nav class="py-5" data-ps="src/components/Navigation.astro:m59h3b">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center" data-ps="src/components/Navigation.astro:gqvsdb">
+      <a href="/" class="flex items-center gap-2 text-2xl font-black tracking-tighter text-white no-underline group uppercase" data-ps="src/components/Navigation.astro:kd8n5y">ELSAN TRANSFORMER</a>
+
+      <div class="flex items-center gap-8" data-ps="src/components/Navigation.astro:gqvsdc">
+        <div class="hidden md:flex gap-8 items-center" data-ps="src/components/Navigation.astro:gqvsdd">
+          <a href="/" class="text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5v">Home</a>
+          <div class="relative group/dropdown" data-ps="src/components/Navigation.astro:nav-products-container">
+            <button class="flex items-center gap-1 text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors cursor-pointer" data-ps="src/components/Navigation.astro:nav-products">
+              Transformers
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/dropdown:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-200 z-50 min-w-[280px]" data-ps="src/components/Navigation.astro:nav-products-dropdown">
+              <div class="bg-slate-900 border border-slate-800 rounded-lg shadow-2xl py-2 flex flex-col overflow-hidden" data-ps="src/components/Navigation.astro:gqvsde">
+                <a href="/products/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsf">All Products</a>
+                <a href="/distribution-transformers/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:kd8n5z">Distribution Transformers</a>
+                <a href="/power-transformers/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:kd8n5y">Power Transformers</a>
+                <a href="/single-phase-units/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:kd8n5x">Single Phase Units</a>
+                <a href="/special-type-of-transformers/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:kd8n5w">Special Type Units</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group/dropdown" data-ps="src/components/Navigation.astro:nav-services-container">
+            <button class="flex items-center gap-1 text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors cursor-pointer" data-ps="src/components/Navigation.astro:nav-services">
+              Locations
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/dropdown:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-200 z-50 min-w-[240px]" data-ps="src/components/Navigation.astro:nav-services-dropdown">
+              <div class="bg-slate-900 border border-slate-800 rounded-lg shadow-2xl py-2 flex flex-col overflow-hidden" data-ps="src/components/Navigation.astro:gqvsde">
+                <a href="/transformer-in-benin/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjs9">Transformer In Benin</a>
+                <a href="/transformer-in-togo/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsa">Transformer In Togo</a>
+                <a href="/transformer-in-ghana/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsb">Transformer In Ghana</a>
+                <a href="/transformer-in-cameroon/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjscam">Transformer In Cameroon</a>
+                <a href="/transformer-in-niger/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsnig">Transformer In Niger</a>
+                <a href="/transformer-in-cote-divoire/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsciv">Transformer In Côte d'Ivoire</a>
+                <a href="/transformer-in-senegal/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjssen">Transformer In Senegal</a>
+                <a href="/transformer-in-uganda/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsd">Transformer In Uganda</a>
+                <a href="/transformer-in-zimbabwe/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjse">Transformer In Zimbabwe</a>
+                <a href="/transformer-in-rwanda/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:7vkjsf">Transformer In Rwanda</a>
+                <a href="/transformer-in-sierra-leone/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:kd8n5z">Transformer In Sierra Leone</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group/dropdown" data-ps="src/components/Navigation.astro:nav-industry-container">
+            <button class="flex items-center gap-1 text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors cursor-pointer" data-ps="src/components/Navigation.astro:nav-industry">
+              Industry
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/dropdown:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="absolute left-0 top-full pt-4 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-200 z-50 min-w-[280px]" data-ps="src/components/Navigation.astro:nav-industry-dropdown">
+              <div class="bg-slate-900 border border-slate-800 rounded-lg shadow-2xl py-2 flex flex-col overflow-hidden" data-ps="src/components/Navigation.astro:gqvsd-industry">
+                <a href="/electrical-utilities-and-discos/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-1">Electrical Utilities & Discos</a>
+                <a href="/industrial-manufacturing/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-2">Industrial Manufacturing</a>
+                <a href="/renewable-energy-and-solar-pv/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-3">Renewable Energy & Solar PV</a>
+                <a href="/mining-and-heavy-industry/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-4">Mining & Heavy Industry</a>
+                <a href="/construction-and-infrastructure/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-5">Construction & Infrastructure</a>
+                <a href="/oil-gas-and-petrochemical/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-6">Oil, Gas & Petrochemical</a>
+                <a href="/commercia-and-real-estate/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-7">Commercial & Real Estate</a>
+                <a href="/west-africa-export/" class="px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" data-ps="src/components/Navigation.astro:ind-8">West Africa Export</a>
+              </div>
+            </div>
+          </div>
+          <a href="/about-us/" class="text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5u">About Us</a>
+          <a href="/blog/" class="text-slate-300 text-sm font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5t">Blog</a>
+          <a href="/contact/" class="bg-[#E85D1A] text-white px-5 py-2.5 text-sm font-bold uppercase tracking-widest no-underline hover:bg-[#D04C0F] transition-transform active:scale-95" data-ps="src/components/Navigation.astro:nav-contact">Contact</a>
+          
+          <!-- Language Switcher Desktop -->
+          <div class="flex items-center gap-2 border-l border-slate-700 pl-4 ml-2" data-ps="src/components/Navigation.astro:lang-desktop">
+            <button onclick="switchLanguage('en')" class="text-xs font-bold uppercase tracking-widest text-slate-300 hover:text-[#E85D1A] transition-colors" aria-label="Switch to English" data-ps="src/components/Navigation.astro:5ds5">EN</button>
+            <span class="text-slate-600" data-ps="src/components/Navigation.astro:i2om6h">/</span>
+            <button onclick="switchLanguage('fr')" class="text-xs font-bold uppercase tracking-widest text-slate-300 hover:text-[#E85D1A] transition-colors" aria-label="Switch to French" data-ps="src/components/Navigation.astro:5ds6">FR</button>
+          </div>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="md:hidden p-2 text-gray-400 hover:text-gray-900 transition-colors"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+         data-ps="src/components/Navigation.astro:5ds1">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden overflow-hidden bg-slate-900 border-t border-slate-800"
+    role="navigation"
+    aria-label="Mobile navigation"
+   data-ps="src/components/Navigation.astro:gqvsde">
+    <nav class="flex flex-col py-6 px-6 gap-4" data-ps="src/components/Navigation.astro:m59h37">
+      <a href="/" class="text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5s">Home</a>
+      <div class="flex flex-col gap-2" data-ps="src/components/Navigation.astro:mob-products-container">
+        <button id="mobile-products-button" class="flex justify-between items-center text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors w-full text-left" data-ps="src/components/Navigation.astro:mob-products">
+          Transformers
+          <svg id="mob-products-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mobile-products-menu" class="hidden flex flex-col pl-4 gap-2 border-l border-slate-800 mt-2" data-ps="src/components/Navigation.astro:mob-products-dropdown">
+          <a href="/products/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5v">All Products</a>
+          <a href="/distribution-transformers/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5u">Distribution Transformers</a>
+          <a href="/power-transformers/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5t">Power Transformers</a>
+          <a href="/single-phase-units/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5s">Single Phase Units</a>
+          <a href="/special-type-of-transformers/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5r">Special Type Units</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2" data-ps="src/components/Navigation.astro:mob-services-container">
+        <button id="mobile-services-button" class="flex justify-between items-center text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors w-full text-left" data-ps="src/components/Navigation.astro:mob-services">
+          Locations
+          <svg id="mob-services-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mobile-services-menu" class="hidden flex flex-col pl-4 gap-2 border-l border-slate-800 mt-2" data-ps="src/components/Navigation.astro:mob-services-dropdown">
+          <a href="/transformer-in-benin/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5y">Transformer In Benin</a>
+          <a href="/transformer-in-togo/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5x">Transformer In Togo</a>
+          <a href="/transformer-in-ghana/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5w">Transformer In Ghana</a>
+          <a href="/transformer-in-cameroon/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5cam">Transformer In Cameroon</a>
+          <a href="/transformer-in-niger/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5nig">Transformer In Niger</a>
+          <a href="/transformer-in-cote-divoire/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5civ">Transformer In Côte d'Ivoire</a>
+          <a href="/transformer-in-senegal/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5sen">Transformer In Senegal</a>
+          <a href="/transformer-in-uganda/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5u">Transformer In Uganda</a>
+          <a href="/transformer-in-zimbabwe/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5t">Transformer In Zimbabwe</a>
+          <a href="/transformer-in-rwanda/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5s">Transformer In Rwanda</a>
+          <a href="/transformer-in-sierra-leone/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:kd8n5r">Transformer In Sierra Leone</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2" data-ps="src/components/Navigation.astro:mob-industry-container">
+        <button id="mobile-industry-button" class="flex justify-between items-center text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors w-full text-left" data-ps="src/components/Navigation.astro:mob-industry">
+          Industry
+          <svg id="mob-industry-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mobile-industry-menu" class="hidden flex flex-col pl-4 gap-2 border-l border-slate-800 mt-2" data-ps="src/components/Navigation.astro:mob-industry-dropdown">
+          <a href="/electrical-utilities-and-discos/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-1-mob">Electrical Utilities & Discos</a>
+          <a href="/industrial-manufacturing/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-2-mob">Industrial Manufacturing</a>
+          <a href="/renewable-energy-and-solar-pv/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-3-mob">Renewable Energy & Solar PV</a>
+          <a href="/mining-and-heavy-industry/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-4-mob">Mining & Heavy Industry</a>
+          <a href="/construction-and-infrastructure/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-5-mob">Construction & Infrastructure</a>
+          <a href="/oil-gas-and-petrochemical/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-6-mob">Oil, Gas & Petrochemical</a>
+          <a href="/commercia-and-real-estate/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-7-mob">Commercial & Real Estate</a>
+          <a href="/west-africa-export/" class="text-slate-400 text-sm font-bold uppercase tracking-widest hover:text-white py-1 transition-colors" data-ps="src/components/Navigation.astro:ind-8-mob">West Africa Export</a>
+        </div>
+      </div>
+      <a href="/about-us/" class="text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5r">About Us</a>
+      <a href="/blog/" class="text-slate-300 font-bold uppercase tracking-widest no-underline hover:text-white transition-colors" data-ps="src/components/Navigation.astro:kd8n5q">Blog</a>
+      <a href="/contact/" class="text-[#E85D1A] font-bold uppercase tracking-widest no-underline" data-ps="src/components/Navigation.astro:mob-contact">Contact</a>
+      
+      <!-- Language Switcher Mobile -->
+      <div class="flex items-center gap-4 mt-2 pt-4 border-t border-slate-800" data-ps="src/components/Navigation.astro:lang-mobile">
+        <button onclick="switchLanguage('en')" class="flex-1 text-center py-2 text-xs font-bold uppercase tracking-widest text-slate-300 bg-slate-800 rounded hover:bg-slate-700 hover:text-white transition-colors" data-ps="src/components/Navigation.astro:5ds7">English</button>
+        <button onclick="switchLanguage('fr')" class="flex-1 text-center py-2 text-xs font-bold uppercase tracking-widest text-slate-300 bg-slate-800 rounded hover:bg-slate-700 hover:text-white transition-colors" data-ps="src/components/Navigation.astro:5ds8">French</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Google Translate Widget (Hidden) -->
+<!-- Google Translate Widget (Must be present but can be hidden) -->
+<div id="google_translate_element" aria-hidden="true" data-ps="src/components/Navigation.astro:gqvsde"></div>
+
+<style is:global>
+  /* 
+     AGGRESSIVE GOOGLE TRANSLATE UI REMOVAL
+     Ensures no popups, banners, or layout shifts appear when translating
+  */
+  
+  /* Hide the top banner frame */
+  .goog-te-banner-frame, 
+  .goog-te-banner-frame.skiptranslate,
+  iframe.goog-te-banner-frame,
+  #goog-gt-tt,
+  .goog-te-balloon-frame {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  /* Force body to stay at top and ignore Google's injected 40px margin */
+  body {
+    top: 0 !important;
+    position: static !important;
+  }
+
+  /* Hide the gadget/widget entirely */
+  .goog-te-gadget,
+  .goog-te-gadget-simple,
+  .goog-te-gadget-icon,
+  .goog-te-menu-value,
+  #google_translate_element {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Remove highlight on hover/translation */
+  .goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important;
+  }
+
+  /* Prevent Google from adding 'translated' class styles to body */
+  .translated-ltr, .translated-rtl {
+    margin-top: 0 !important;
+  }
+
+  /* Ensure our navigation stays on top and isn't pushed down */
+  #navbar {
+    top: 0 !important;
+  }
+
+  /* Hide tooltips and progress indicators */
+  .goog-tooltip, 
+  .goog-tooltip:hover,
+  .skiptranslate > iframe {
+    display: none !important;
+    visibility: hidden !important;
+  }
+</style>
+
+<script is:inline>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,fr',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false,
+    }, 'google_translate_element');
+  }
+
+  function switchLanguage(lang) {
+    // Force aggressive cookie setting for Google Translate
+    const cookieName = 'googtrans';
+    const domain = window.location.hostname;
+    const cookieValue = lang === 'fr' ? '/en/fr' : '/en/en';
+    
+    // 1. Clear existing cookies (expires in past)
+    document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain;
+    document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + domain;
+
+    // 2. Set new cookie (if not clearing for default)
+    // We set it on multiple paths/domains to ensure Google picks it up
+    const date = new Date();
+    date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000)); // 30 days
+    const expires = "; expires=" + date.toUTCString();
+    
+    // Set for root path
+    document.cookie = cookieName + "=" + cookieValue + expires + "; path=/";
+    document.cookie = cookieName + "=" + cookieValue + expires + "; path=/; domain=" + domain;
+    
+    // 3. Reload to apply
+    window.location.reload();
+  }
+  
+  // Make globally available
+  window.googleTranslateElementInit = googleTranslateElementInit;
+  window.switchLanguage = switchLanguage;
+</script>
+<script is:inline src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script is:inline>
+  const navbar = document.getElementById('navbar');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIconOpen = document.getElementById('menu-icon-open');
+  const menuIconClose = document.getElementById('menu-icon-close');
+
+  function updateNavbar() {
+    if (window.scrollY > 50) {
+      navbar?.classList.add('md:bg-slate-950/90');
+    } else {
+      navbar?.classList.remove('md:bg-slate-950/90');
+    }
+  }
+  window.addEventListener('scroll', updateNavbar, { passive: true });
+  updateNavbar();
+
+  function toggleMenu(manual = true) {
+    const isOpen = !mobileMenu?.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu?.classList.add('hidden');
+      menuIconOpen?.classList.remove('hidden');
+      menuIconClose?.classList.add('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      
+      // If closing manually (click/esc), and we added a state, go back
+      if (manual && window.history.state === 'menu-open') {
+        window.history.back();
+      }
+    } else {
+      mobileMenu?.classList.remove('hidden');
+      menuIconOpen?.classList.add('hidden');
+      menuIconClose?.classList.remove('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+      
+      // Push state so back button closes menu
+      window.history.pushState('menu-open', '');
+    }
+  }
+
+  mobileMenuButton?.addEventListener('click', () => toggleMenu(true));
+
+  // Close menu on back button
+  window.addEventListener('popstate', (event) => {
+    if (!mobileMenu?.classList.contains('hidden')) {
+      toggleMenu(false);
+    }
+  });
+
+  const mobileProductsButton = document.getElementById('mobile-products-button');
+  const mobileProductsMenu = document.getElementById('mobile-products-menu');
+  const mobileProductsIcon = document.getElementById('mob-products-icon');
+
+  mobileProductsButton?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isHidden = mobileProductsMenu?.classList.contains('hidden');
+    if (isHidden) {
+      mobileProductsMenu?.classList.remove('hidden');
+      mobileProductsIcon?.classList.add('rotate-180');
+      // Close other menu
+      mobileServicesMenu?.classList.add('hidden');
+      mobileServicesIcon?.classList.remove('rotate-180');
+    } else {
+      mobileProductsMenu?.classList.add('hidden');
+      mobileProductsIcon?.classList.remove('rotate-180');
+    }
+  });
+
+  const mobileServicesButton = document.getElementById('mobile-services-button');
+  const mobileServicesMenu = document.getElementById('mobile-services-menu');
+  const mobileServicesIcon = document.getElementById('mob-services-icon');
+
+  mobileServicesButton?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isHidden = mobileServicesMenu?.classList.contains('hidden');
+    if (isHidden) {
+      mobileServicesMenu?.classList.remove('hidden');
+      mobileServicesIcon?.classList.add('rotate-180');
+      // Close other menus
+      mobileProductsMenu?.classList.add('hidden');
+      mobileProductsIcon?.classList.remove('rotate-180');
+      mobileIndustryMenu?.classList.add('hidden');
+      mobileIndustryIcon?.classList.remove('rotate-180');
+    } else {
+      mobileServicesMenu?.classList.add('hidden');
+      mobileServicesIcon?.classList.remove('rotate-180');
+    }
+  });
+
+  const mobileIndustryButton = document.getElementById('mobile-industry-button');
+  const mobileIndustryMenu = document.getElementById('mobile-industry-menu');
+  const mobileIndustryIcon = document.getElementById('mob-industry-icon');
+
+  mobileIndustryButton?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isHidden = mobileIndustryMenu?.classList.contains('hidden');
+    if (isHidden) {
+      mobileIndustryMenu?.classList.remove('hidden');
+      mobileIndustryIcon?.classList.add('rotate-180');
+      // Close other menus
+      mobileProductsMenu?.classList.add('hidden');
+      mobileProductsIcon?.classList.remove('rotate-180');
+      mobileServicesMenu?.classList.add('hidden');
+      mobileServicesIcon?.classList.remove('rotate-180');
+    } else {
+      mobileIndustryMenu?.classList.add('hidden');
+      mobileIndustryIcon?.classList.remove('rotate-180');
+    }
+  });
+
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (!mobileMenu?.classList.contains('hidden')) {
+        toggleMenu(true);
+      }
+      // Reset menus when nav closes
+      mobileServicesMenu?.classList.add('hidden');
+      mobileServicesIcon?.classList.remove('rotate-180');
+      mobileProductsMenu?.classList.add('hidden');
+      mobileProductsIcon?.classList.remove('rotate-180');
+      mobileIndustryMenu?.classList.add('hidden');
+      mobileIndustryIcon?.classList.remove('rotate-180');
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !mobileMenu?.classList.contains('hidden')) {
+      toggleMenu();
+    }
+  });
+</script>

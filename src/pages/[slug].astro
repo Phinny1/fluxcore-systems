@@ -1,0 +1,82 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Products from '@/components/home/Products.astro';
+import Contact from '@/components/home/Contact.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+
+export async function getStaticPaths() {
+  const regions = [
+    { slug: 'transformer-in-benin', country: 'Benin' },
+    { slug: 'transformer-in-togo', country: 'Togo' },
+    { slug: 'transformer-in-ghana', country: 'Ghana' },
+    { slug: 'transformer-in-uganda', country: 'Uganda' },
+    { slug: 'transformer-in-zimbabwe', country: 'Zimbabwe' },
+    { slug: 'transformer-in-rwanda', country: 'Rwanda' },
+    { slug: 'transformer-in-sierra-leone', country: 'Sierra Leone' },
+  ];
+
+  return regions.map(({ slug, country }) => ({
+    params: { slug },
+    props: { country },
+  }));
+}
+
+const { country } = Astro.props;
+---
+
+<BaseLayout
+  title={`Transformers in ${country} | Elsan Transformer`}
+  description={`Premier supplier of high-voltage distribution and power transformers in ${country}. Reliable grid solutions for utilities and industry.`}
+>
+  <PageHero 
+    title={`Transformers in ${country}`}
+    subtitle={`Delivering high-efficiency power solutions to empower ${country}'s grid infrastructure.`}
+    backgroundImage="https://images.unsplash.com/photo-1770121696405-cd23f3c0cf22?auto=format&w=1920&q=80"
+  />
+
+  <section class="py-16 bg-slate-900" data-ps="src/pages/[slug].astro:q531xe">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-ps="src/pages/[slug].astro:h96sv">
+      <h2 class="text-3xl font-black text-white mb-6" data-ps="src/pages/[slug].astro:nkrdsg">Trusted Power Solutions for {country}</h2>
+      <p class="text-slate-300 text-lg leading-relaxed" data-ps="src/pages/[slug].astro:3zqscv">
+        Elsan Transformer is committed to supporting the energy sector in {country}. 
+        Our transformers are engineered to withstand tropical climates and rigorous grid conditions, 
+        ensuring reliable power distribution for utilities, industrial complexes, and renewable energy projects across {country}.
+      </p>
+    </div>
+  </section>
+  
+  <Products />
+  
+  <section class="py-16 bg-slate-950" data-ps="src/pages/[slug].astro:ucveu">
+    <div class="max-w-7xl mx-auto px-6 text-center" data-ps="src/pages/[slug].astro:h96sw">
+      <h2 class="text-3xl font-black text-white mb-12" data-ps="src/pages/[slug].astro:nkrdsf">Why Choose Elsan in {country}?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/pages/[slug].astro:h96sx">
+        <div class="p-8 bg-slate-900 rounded-xl border border-slate-800" data-ps="src/pages/[slug].astro:h96sy">
+          <div class="text-[#E85D1A] mb-4" data-ps="src/pages/[slug].astro:h96sz">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3" data-ps="src/pages/[slug].astro:wrxqz1">Cost-Effective Logistics</h3>
+          <p class="text-slate-400" data-ps="src/pages/[slug].astro:3zqscw">Optimized shipping routes to {country} ensure timely delivery and competitive pricing.</p>
+        </div>
+        <div class="p-8 bg-slate-900 rounded-xl border border-slate-800" data-ps="src/pages/[slug].astro:h96t0">
+          <div class="text-[#E85D1A] mb-4" data-ps="src/pages/[slug].astro:h96t1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3" data-ps="src/pages/[slug].astro:wrxqz2">Local Compliance</h3>
+          <p class="text-slate-400" data-ps="src/pages/[slug].astro:3zqscx">Our products meet all relevant IEC standards and {country}'s local grid regulations.</p>
+        </div>
+        <div class="p-8 bg-slate-900 rounded-xl border border-slate-800" data-ps="src/pages/[slug].astro:h96t2">
+          <div class="text-[#E85D1A] mb-4" data-ps="src/pages/[slug].astro:h96t3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3" data-ps="src/pages/[slug].astro:wrxqz3">After-Sales Support</h3>
+          <p class="text-slate-400" data-ps="src/pages/[slug].astro:3zqscy">Dedicated technical support to assist with installation and maintenance in {country}.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+  <QuotationRequest />
+</BaseLayout>

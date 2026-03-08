@@ -1,0 +1,75 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+
+const country = "Uganda";
+---
+
+<BaseLayout
+  title={`Transformer in ${country} | Elsan Transformers`}
+  description={`Premier transformer solutions and power infrastructure for ${country}.`}
+>
+  <PageHero 
+    title={`Transformer in ${country}`}
+    subtitle={`Powering ${country}'s grid with high-efficiency distribution and power transformers.`}
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+  
+  <section class="py-16 bg-white" data-ps="src/pages/transformer-in-uganda.astro:section1">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/transformer-in-uganda.astro:x8kt8p">
+      <div class="prose max-w-none prose-slate prose-headings:text-slate-900 prose-p:text-slate-600" data-ps="src/pages/transformer-in-uganda.astro:x8kt8q">
+        <h2 data-ps="src/pages/transformer-in-uganda.astro:ehznsg">Power Solutions for {country}</h2>
+        <p data-ps="src/pages/transformer-in-uganda.astro:dhfaev">
+          Elsan Transformer supplies certified power and distribution transformers to Uganda, manufactured in Turkey to IEC 60076 and ISO 9001:2015 standards, with export from Nigeria via Mombasa and Dar es Salaam ports.
+        </p>
+
+        <h3 data-ps="src/pages/transformer-in-uganda.astro:8mm8f2">Uganda's Electricity Sector and Transformer Requirements</h3>
+        <p data-ps="src/pages/transformer-in-uganda.astro:86id25">
+          Uganda's electricity infrastructure has expanded rapidly, anchored by the 600 MW Karuma Hydropower Project and the 183 MW Isimba Dam, which significantly increased national generation capacity. UEDCL (Uganda Electricity Distribution Company Limited) and UMEME, the primary distribution licensee, operate networks spanning Kampala, Jinja, Mbarara, Gulu, Mbale, and Fort Portal, with REA (Rural Electrification Agency) extending access across rural communities. ERA (Electricity Regulatory Authority) oversees technical and licensing compliance for all grid equipment, including transformer procurement standards.
+        </p>
+
+        <h3 data-ps="src/pages/transformer-in-uganda.astro:8mm8f3">Elsan's Transformer Range for Uganda</h3>
+        <p data-ps="src/pages/transformer-in-uganda.astro:86id26">Elsan supplies the complete transformer range required by Uganda's utilities, contractors, and industrial operators:</p>
+        <ul>
+          <li data-ps="src/pages/transformer-in-uganda.astro:o2024e"><strong>Distribution transformers:</strong> 25 kVA to 2,500 kVA — for Uganda's 11 kV and 33 kV distribution networks in pole-mounted, pad-mounted, and packaged substation configurations</li>
+          <li data-ps="src/pages/transformer-in-uganda.astro:o2024f"><strong>Power transformers:</strong> 3.15 MVA to 50 MVA — for substation and transmission applications aligned with UETCL and UEDCL specifications</li>
+          <li data-ps="src/pages/transformer-in-uganda.astro:o2024g"><strong>Single-phase units:</strong> up to 160 kVA — for REA rural electrification programmes across Uganda's districts</li>
+          <li data-ps="src/pages/transformer-in-uganda.astro:o20252"><strong>Solar PV transformers:</strong> custom-engineered for Uganda's growing utility-scale solar and off-grid sector</li>
+        </ul>
+
+        <p data-ps="src/pages/transformer-in-uganda.astro:86id27">
+          Uganda's diverse geography — from Lake Victoria's equatorial lowlands to the Rwenzori highland terrain above 1,500 metres — requires transformer equipment rated for altitude-derated insulation and varying humidity. Elsan's engineering team specifies units appropriate for each project's altitude and climate profile, in compliance with IEC 60076 altitude correction requirements. Every unit is factory tested before dispatch.
+        </p>
+
+        <h3 data-ps="src/pages/transformer-in-uganda.astro:e0y0nd">Standards, Certifications, and Documentation</h3>
+        <p data-ps="src/pages/transformer-in-uganda.astro:86id28">
+          Elsan operates under ISO 9001:2015, ISO 14001, and ISO 45001 certification. All products comply with IEC 60076. Routine test certificates, type test reports, and technical datasheets are provided as standard — meeting ERA Uganda regulatory requirements and international development lender qualification criteria.
+        </p>
+
+        <div class="mt-16 bg-slate-50 p-8 rounded-2xl border border-slate-100" data-ps="src/pages/transformer-in-uganda.astro:x8kt8m">
+          <h2 class="text-2xl font-bold mb-8 text-slate-900" data-ps="src/pages/transformer-in-uganda.astro:ehznsd">Frequently Asked Questions</h2>
+          
+          <div class="space-y-6" data-ps="src/pages/transformer-in-uganda.astro:x8kt8n">
+            <div data-ps="src/pages/transformer-in-uganda.astro:x8kt8o">
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-ps="src/pages/transformer-in-uganda.astro:e0y0ne">How does Elsan deliver to Uganda?</h3>
+              <p class="text-slate-600" data-ps="src/pages/transformer-in-uganda.astro:86id29">Via Mombasa or Dar es Salaam ports, with full export documentation and customs clearance support.</p>
+            </div>
+            
+            <div data-ps="src/pages/transformer-in-uganda.astro:x8kt8p">
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-ps="src/pages/transformer-in-uganda.astro:e0y0nf">Are altitude-rated units available?</h3>
+              <p class="text-slate-600" data-ps="src/pages/transformer-in-uganda.astro:86id2a">Yes — insulation and dielectric specifications are adjusted for highland installations.</p>
+            </div>
+            
+            <div data-ps="src/pages/transformer-in-uganda.astro:x8kt8q">
+              <h3 class="text-lg font-bold text-slate-900 mb-2" data-ps="src/pages/transformer-in-uganda.astro:e0y0ng">Does Elsan supply to REA rural electrification projects?</h3>
+              <p class="text-slate-600" data-ps="src/pages/transformer-in-uganda.astro:86id2b">Yes — single-phase and small distribution units are specifically stocked for rural access programmes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <QuotationRequest />
+</BaseLayout>

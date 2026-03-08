@@ -1,0 +1,72 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+
+const country = "Cameroon";
+---
+
+<BaseLayout
+  title={`Transformer in ${country} | Elsan Transformers`}
+  description={`Premier transformer solutions and power infrastructure for ${country}.`}
+>
+  <PageHero 
+    title={`Transformer in ${country}`}
+    subtitle={`Powering ${country}'s grid with high-efficiency distribution and power transformers.`}
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+  
+  <section class="py-16 bg-white" data-ps="src/pages/transformer-in-cameroon.astro:section1">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/transformer-in-cameroon.astro:hdtzpu">
+      <div class="prose max-w-none prose-slate" data-ps="src/pages/transformer-in-cameroon.astro:hdtzpt">
+        <h2 class="text-3xl font-bold mb-6" data-ps="src/pages/transformer-in-cameroon.astro:oi6yln">Power Solutions for {country}</h2>
+        <p class="text-lg text-slate-600 mb-8" data-ps="src/pages/transformer-in-cameroon.astro:rkkfe6">
+          Elsan Transformer supplies certified power and distribution transformers to Cameroon, manufactured in Turkey to IEC 60076 and ISO 9001:2015 standards, with export logistics from Nigeria to Douala.
+        </p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-cameroon.astro:sector">Cameroon's Energy Sector and Transformer Demand</h3>
+        <p class="mb-6" data-ps="src/pages/transformer-in-cameroon.astro:cuoxq1">
+          Cameroon's electricity concession is managed by ENEO (Energy of Cameroon), which operates the distribution network across Douala, Yaoundé, Bafoussam, Garoua, and regional towns spanning the country's ten regions. Cameroon's diverse industrial economy — encompassing aluminium smelting at ALUCAM in Édéa, agro-processing, timber, and petroleum extraction — creates substantial and sustained demand for transformer equipment engineered to handle high-load industrial applications, humid equatorial conditions, and the voltage characteristics of a mixed hydroelectric and thermal generation grid.
+        </p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-cameroon.astro:range">Elsan's Transformer Range for Cameroon</h3>
+        <p class="mb-6" data-ps="src/pages/transformer-in-cameroon.astro:cuoxq2">
+          Elsan supplies the full spectrum of transformer types required across Cameroon's utility and industrial sectors:
+        </p>
+        <ul class="list-disc pl-6 mb-8 space-y-4">
+          <li data-ps="src/pages/transformer-in-cameroon.astro:wdpz0x"><strong>Distribution transformers:</strong> 25 kVA to 2,500 kVA — aligned with ENEO's 15 kV, 30 kV, and 33 kV medium-voltage network specifications</li>
+          <li data-ps="src/pages/transformer-in-cameroon.astro:wdpz0w"><strong>Power transformers:</strong> 3.15 MVA to 50 MVA — with on-load tap changers (OLTC), ONAN and ONAF cooling, for major substation and industrial applications</li>
+          <li data-ps="src/pages/transformer-in-cameroon.astro:wdpz0v"><strong>Single-phase units:</strong> up to 160 kVA — for rural electrification across Cameroon's off-grid northern and eastern regions</li>
+          <li data-ps="src/pages/transformer-in-cameroon.astro:wdpz0u"><strong>Solar PV transformers:</strong> custom-engineered for the growing renewable energy sector across Cameroon</li>
+        </ul>
+
+        <p class="mb-6" data-ps="src/pages/transformer-in-cameroon.astro:cuoxq3">
+          All Elsan power transformers are factory tested to IEC 60076 with full routine test documentation. OLTC-equipped units enable active voltage regulation — essential for managing the voltage profiles common on Cameroon's mixed-source generation grid. Custom voltage ratios and tap configurations are available to meet specific ENEO specifications or project requirements.
+        </p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-cameroon.astro:standards">Standards, Certifications, and Documentation</h3>
+        <p class="mb-8" data-ps="src/pages/transformer-in-cameroon.astro:4zwf59">
+          Elsan holds ISO 9001:2015, ISO 14001, and ISO 45001 certifications. All transformers comply with IEC 60076. Type test reports, routine test certificates, and technical datasheets are provided as standard, meeting ENEO procurement and international development finance documentation requirements.
+        </p>
+
+        <h3 class="text-2xl font-bold mt-12 mb-6" data-ps="src/pages/transformer-in-cameroon.astro:faq-title">Frequently Asked Questions</h3>
+        <div class="space-y-6" data-ps="src/pages/transformer-in-cameroon.astro:faq-content">
+          <div data-ps="src/pages/transformer-in-cameroon.astro:bk4vke">
+            <h3 class="text-xl font-semibold mb-2" data-ps="src/pages/transformer-in-cameroon.astro:gsdp4n">Does Elsan export to Cameroon?</h3>
+            <p data-ps="src/pages/transformer-in-cameroon.astro:4zwf5a">Yes. Elsan manages full export from Nigeria to Douala with complete customs and shipping documentation.</p>
+          </div>
+          <div data-ps="src/pages/transformer-in-cameroon.astro:bk4vkd">
+            <h3 class="text-xl font-semibold mb-2" data-ps="src/pages/transformer-in-cameroon.astro:gsdp4o">Can units be customised for ENEO specifications?</h3>
+            <p data-ps="src/pages/transformer-in-cameroon.astro:4zwf5b">Yes — voltage ratios, tap ranges, and cooling configurations are engineered to order.</p>
+          </div>
+          <div data-ps="src/pages/transformer-in-cameroon.astro:bk4vkc">
+            <h3 class="text-xl font-semibold mb-2" data-ps="src/pages/transformer-in-cameroon.astro:gsdp4p">Are OLTC transformers available?</h3>
+            <p data-ps="src/pages/transformer-in-cameroon.astro:4zwf5c">Yes, on-load tap changers are standard on power transformer units from 3.15 MVA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <QuotationRequest />
+</BaseLayout>

@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Specifications from '@/components/home/Specifications.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+import Industries from '@/components/home/Industries.astro';
+---
+
+<BaseLayout
+  title="Industrial Manufacturing | Elsan Transformer"
+  description="Heavy-duty transformers for industrial manufacturing facilities, designed for variable loads and minimal downtime."
+>
+  <PageHero 
+    title="Industrial Manufacturing" 
+    subtitle="Powering heavy industry with transformers engineered for resilience and performance."
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-6-1024-1024-1024.webp"
+  />
+
+  <section class="py-24 bg-white" data-ps="src/pages/industrial-manufacturing.astro:cknlxl">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/industrial-manufacturing.astro:8a5wio">
+      <div class="grid md:grid-cols-2 gap-16 items-center" data-ps="src/pages/industrial-manufacturing.astro:8a5wip">
+        <div data-ps="src/pages/industrial-manufacturing.astro:8a5wiq">
+          <h2 class="text-4xl font-black tracking-tighter text-slate-900 mb-6 uppercase" data-ps="src/pages/industrial-manufacturing.astro:kwjwjp">Industrial Power Solutions</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-ps="src/pages/industrial-manufacturing.astro:kw4llq">
+            Heavy manufacturing facilities require transformers that perform consistently under variable load conditions. Elsan units are engineered for Nigerian industrial environments where downtime is not an option. We provide power solutions that keep your production lines running smoothly.
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start gap-3" data-ps="src/pages/industrial-manufacturing.astro:9i3fs5">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/industrial-manufacturing.astro:bo6kgx"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/industrial-manufacturing.astro:bo6kgw">Handling of heavy motor starting currents</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/industrial-manufacturing.astro:9i3fs6">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/industrial-manufacturing.astro:bo6kgv"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/industrial-manufacturing.astro:bo6kgu">Vibration and harmonics mitigation</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/industrial-manufacturing.astro:9i3fss">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/industrial-manufacturing.astro:bo6kgt"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/industrial-manufacturing.astro:bo6kgs">Customizable for specific factory layouts</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/industrial-manufacturing.astro:9i3fst">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/industrial-manufacturing.astro:bo6kgr"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/industrial-manufacturing.astro:ipgcsd">Rugged design for industrial environments</span>
+            </li>
+          </ul>
+          <a href="/contact/" class="inline-block bg-[#E85D1A] text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-[#D04C0F] transition-colors" data-ps="src/pages/industrial-manufacturing.astro:fhw0rq">CONTACT US</a>
+        </div>
+        <div class="relative" data-ps="src/pages/industrial-manufacturing.astro:8a5wir">
+          <img
+            src="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-6-1024.webp"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Industrial Factory" 
+            class="w-full h-auto shadow-2xl" data-ps="src/pages/industrial-manufacturing.astro:ll324m" />
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#E85D1A]/10 -z-10" data-ps="src/pages/industrial-manufacturing.astro:8a5wis"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Specifications />
+  <Industries />
+  <QuotationRequest />
+</BaseLayout>

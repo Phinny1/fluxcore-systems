@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  /* Layout */
+  --nav-height: 72px;
+
+  /* Page colors - Industrial Slate Palette */
+  --background: hsl(215 28% 100%);
+  --text: hsl(215 25% 10%);
+  --text-muted: hsl(215 16% 47%);
+  --border: hsl(215 13% 91%);
+  --surface: hsl(215 13% 98%);
+
+  /* Brand colors - Slate & Warm Orange */
+  --primary: #E85D1A;
+  --primary-hover: #D04C0F;
+
+  /* Accent sections (footer, dark hero) */
+  --accent-bg: hsl(222 47% 11%); /* Slate-950 */
+  --accent-text: hsl(215 20% 90%);
+  --accent-border: hsl(217 33% 17%);
+
+  --success: hsl(142 76% 36%);
+  --error: hsl(0 72% 51%);
+  --warning: hsl(38 92% 50%);
+}
+
+html, body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.prose {
+  --tw-prose-body: var(--text);
+  --tw-prose-headings: var(--text);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bullets: var(--text-muted);
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* Custom Utilities for Industrial Look */
+.industrial-border {
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.industrial-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.industrial-border:hover::after {
+  opacity: 1;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 24px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hero-animate-delay-1 { animation-delay: 0.1s; }
+.hero-animate-delay-2 { animation-delay: 0.2s; }
+.hero-animate-delay-3 { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate {
+    animation: none;
+    opacity: 1;
+  }
+}

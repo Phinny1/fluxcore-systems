@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Specifications from '@/components/home/Specifications.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+import Industries from '@/components/home/Industries.astro';
+---
+
+<BaseLayout
+  title="Power Transformers | Elsan Transformer"
+  description="Robust power transformers designed for transmission networks and large-scale industrial applications."
+>
+  <PageHero 
+    title="Power Transformers" 
+    subtitle="High-capacity units engineered for critical infrastructure and bulk power transmission."
+    backgroundImage="https://images.unsplash.com/photo-1714480293865-f579982ba5a0?auto=format&w=1200&q=80"
+  />
+
+  <section class="py-24 bg-white" data-ps="src/pages/power-transformers.astro:1">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/power-transformers.astro:kvr408">
+      <div class="grid md:grid-cols-2 gap-16 items-center" data-ps="src/pages/power-transformers.astro:kvr409">
+        <div class="order-2 md:order-1 relative" data-ps="src/pages/power-transformers.astro:kvr40a">
+          <img
+            src="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-5-1024.webp" 
+            alt="Heavy Duty Power Transformer" 
+            class="w-full h-auto shadow-2xl" data-ps="src/pages/power-transformers.astro:8zhun1" />
+          <div class="absolute -top-6 -left-6 w-48 h-48 bg-[#E85D1A]/10 -z-10" data-ps="src/pages/power-transformers.astro:kvr40b"></div>
+        </div>
+        <div class="order-1 md:order-2" data-ps="src/pages/power-transformers.astro:kvr40c">
+          <h2 class="text-4xl font-black tracking-tighter text-slate-900 mb-6 uppercase" data-ps="src/pages/power-transformers.astro:255qr2">Heavy-Duty Performance</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-ps="src/pages/power-transformers.astro:1o58qh">
+            Our power transformers are built to handle massive electrical loads with maximum reliability. These units are the backbone of transmission networks, providing stable voltage regulation for large-scale operations.
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start gap-3" data-ps="src/pages/power-transformers.astro:3u743m">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/power-transformers.astro:iluqpk"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/power-transformers.astro:iluqpl">Capacities up to 100MVA</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/power-transformers.astro:3u7430">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/power-transformers.astro:iluqpm"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/power-transformers.astro:iluqpn">Advanced cooling systems (ONAN/ONAF)</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/power-transformers.astro:3u742z">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/power-transformers.astro:iluqpo"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/power-transformers.astro:iluqpp">On-load tap changers (OLTC) available</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/power-transformers.astro:3u742y">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/power-transformers.astro:ecj71n"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/power-transformers.astro:ecj71o">Designed for extreme environmental conditions</span>
+            </li>
+          </ul>
+          <a href="/contact/" class="inline-block bg-[#E85D1A] text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-[#D04C0F] transition-colors" data-ps="src/pages/power-transformers.astro:qcjfzz">CONTACT US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Specifications />
+  <Industries />
+  <QuotationRequest />
+</BaseLayout>

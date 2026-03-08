@@ -1,0 +1,71 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return !data.draft;
+});
+
+// Sort posts by date
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="Blog and Insights | Elsan Transformers"
+  description="Latest news, industry insights, and technical updates from Elsan Transformers."
+>
+  <PageHero 
+    title="Blog and Insights" 
+    subtitle="Stay updated with the latest in transformer technology and grid infrastructure."
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+
+  <section class="py-24 bg-white" data-ps="src/pages/blog/index.astro:a1dpq3">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/blog/index.astro:z9lr8k">
+      {sortedPosts.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-ps="src/pages/blog/index.astro:z9lr8l">
+          {sortedPosts.map((post) => (
+            <a href={`/blog/${post.slug}/`} class="group block bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-[#E85D1A]/50 transition-all hover:-translate-y-1 shadow-sm hover:shadow-md" data-ps="src/pages/blog/index.astro:d4ikzp">
+              <div class="aspect-video overflow-hidden" data-ps="src/pages/blog/index.astro:z9lr8m">
+                <img 
+                  src={post.data.image || "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&w=800&q=80"} 
+                  alt={post.data.title}
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-ps="src/pages/blog/index.astro:5ecsla" />
+              </div>
+              <div class="p-6 flex flex-col flex-grow" data-ps="src/pages/blog/index.astro:z9lr8n">
+                <div class="flex items-center gap-4 text-xs text-slate-500 mb-4 uppercase tracking-wider font-bold" data-ps="src/pages/blog/index.astro:z9lr8o">
+                  <time datetime={post.data.pubDate.toISOString()}>
+                    {post.data.pubDate.toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                  {post.data.category && (
+                    <>
+                      <span data-ps="src/pages/blog/index.astro:pg71q6">•</span>
+                      <span class="text-[#E85D1A]" data-ps="src/pages/blog/index.astro:pg71q7">{post.data.category}</span>
+                    </>
+                  )}
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#E85D1A] transition-colors" data-ps="src/pages/blog/index.astro:if3dah">{post.data.title}</h2>
+                <p class="text-slate-600 line-clamp-3 mb-6" data-ps="src/pages/blog/index.astro:60ko9y">{post.data.description}</p>
+                <div class="mt-auto" data-ps="src/pages/blog/index.astro:rmb123">
+                  <span class="inline-flex items-center text-[#E85D1A] font-bold text-sm group-hover:underline" data-ps="src/pages/blog/index.astro:rmb124">
+                    Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 transition-transform group-hover:translate-x-1"><path d="m9 18 6-6-6-6"/></svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-20" data-ps="src/pages/blog/index.astro:z9lr8p">
+          <p class="text-slate-600 text-xl" data-ps="src/pages/blog/index.astro:y6bqvy">No articles found. Check back soon!</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

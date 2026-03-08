@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  backgroundImage?: string;
+  srcset?: string;
+  sizes?: string;
+}
+
+const { 
+  title, 
+  subtitle,
+  backgroundImage = "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&w=1920&q=80",
+  srcset,
+  sizes = "100vw"
+} = Astro.props;
+
+const path = Astro.url.pathname;
+const segments = path.split('/').filter(Boolean);
+const breadcrumbs = [
+  { name: 'Home', href: '/' },
+  ...segments.map((segment, index) => {
+    const href = '/' + segments.slice(0, index + 1).join('/');
+    const name = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
+    return { name, href };
+  })
+];
+---
+
+<section class="relative py-32 flex items-center bg-slate-950 overflow-hidden" data-ps="src/components/PageHero.astro:bmy8te">
+  <div class="absolute inset-0 z-0" data-ps="src/components/PageHero.astro:hr8ppx">
+    <img crossorigin="anonymous" src={backgroundImage}
+      srcset={srcset}
+      sizes={sizes}
+      alt="Background"
+      class="w-full h-full object-cover opacity-30" 
+      data-ps="src/components/PageHero.astro:nemdlx"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" data-ps="src/components/PageHero.astro:hr8ppw"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full text-center" data-ps="src/components/PageHero.astro:hr8ppv">
+    <nav aria-label="Breadcrumb" class="mb-4 flex justify-center" data-ps="src/components/PageHero.astro:edq2sp">
+      <ol class="flex items-center space-x-2 text-sm font-medium text-slate-400 bg-slate-900/50 backdrop-blur-sm px-4 py-1 rounded-full border border-slate-800">
+        {breadcrumbs.map((crumb, index) => (
+          <li class="flex items-center" data-ps="src/components/PageHero.astro:4hqaoi">
+            {index > 0 && (
+              <svg class="w-4 h-4 text-slate-400 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            )}
+            {index === breadcrumbs.length - 1 ? (
+              <span class="text-brand-400" aria-current="page" data-ps="src/components/PageHero.astro:vo3bw4">{crumb.name}</span>
+            ) : (
+              <a href={crumb.href} class="hover:text-white transition-colors duration-200" data-ps="src/components/PageHero.astro:f8vfpx">{crumb.name}</a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter uppercase" data-ps="src/components/PageHero.astro:iotx5c">{title}</h1>
+    {subtitle && (
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto" data-ps="src/components/PageHero.astro:fh4nqv">{subtitle}</p>
+    )}
+  </div>
+</section>

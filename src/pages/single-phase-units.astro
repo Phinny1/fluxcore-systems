@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import Specifications from '@/components/home/Specifications.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+import Industries from '@/components/home/Industries.astro';
+---
+
+<BaseLayout
+  title="Single Phase Units | Elsan Transformer"
+  description="Compact and efficient single-phase transformers for rural electrification and specialized low-power applications."
+>
+  <PageHero 
+    title="Single Phase Units" 
+    subtitle="Versatile power solutions for rural networks and distributed electrical systems."
+    backgroundImage="https://images.unsplash.com/photo-1763304162809-a7c2f5243354?auto=format&w=1200&q=80"
+  />
+
+  <section class="py-24 bg-white" data-ps="src/pages/single-phase-units.astro:1">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/single-phase-units.astro:e4yd9u">
+      <div class="grid md:grid-cols-2 gap-16 items-center" data-ps="src/pages/single-phase-units.astro:e4yd9v">
+        <div data-ps="src/pages/single-phase-units.astro:e4yd9w">
+          <h2 class="text-4xl font-black tracking-tighter text-slate-900 mb-6 uppercase" data-ps="src/pages/single-phase-units.astro:jw1cmg">Rural & Compact Solutions</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-ps="src/pages/single-phase-units.astro:5jub5">
+            Designed specifically for rural electrification and light industrial use, our single-phase transformers offer a cost-effective solution for providing reliable power to remote locations.
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-start gap-3" data-ps="src/pages/single-phase-units.astro:nftj10">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/single-phase-units.astro:sewenm"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/single-phase-units.astro:sewenl">Ratings from 50kVA </span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/single-phase-units.astro:nftj1m">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/single-phase-units.astro:sewenk"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/single-phase-units.astro:sewenj">Pole-mounted or pad-mounted configurations</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/single-phase-units.astro:nftj1n">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/single-phase-units.astro:seweni"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/single-phase-units.astro:sewenh">Robust insulation for surge protection</span>
+            </li>
+            <li class="flex items-start gap-3" data-ps="src/pages/single-phase-units.astro:nftj1o">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#E85D1A] shrink-0" data-ps="src/pages/single-phase-units.astro:37hfmz"></span>
+              <span class="text-slate-700 font-medium" data-ps="src/pages/single-phase-units.astro:37hfmy">Minimal maintenance requirements</span>
+            </li>
+          </ul>
+          <a href="/contact/" class="inline-block bg-[#E85D1A] text-slate-900 px-8 py-4 font-bold uppercase tracking-widest hover:bg-[#D04C0F] transition-colors" data-ps="src/pages/single-phase-units.astro:bw10et">CONTACT US</a>
+        </div>
+        <div class="relative" data-ps="src/pages/single-phase-units.astro:e4yd9x">
+          <img
+            src="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-3-1024.webp" 
+            alt="Single Phase Pole Transformer" 
+            class="w-full h-auto shadow-2xl" data-ps="src/pages/single-phase-units.astro:fqaldf" />
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#E85D1A]/10 -z-10" data-ps="src/pages/single-phase-units.astro:e4yd9y"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Specifications />
+  <Industries />
+  <QuotationRequest />
+</BaseLayout>

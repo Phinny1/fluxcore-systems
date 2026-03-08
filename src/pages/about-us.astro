@@ -1,0 +1,46 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import About from '@/components/home/About.astro';
+import Features from '@/components/home/Features.astro';
+import QuotationRequest from '@/components/home/QuotationRequest.astro';
+---
+
+<BaseLayout
+  title="About Us | Elsan Transformer"
+  description="Learn about our history, mission, and commitment to powering West Africa."
+>
+  <PageHero 
+    title="About US" 
+    subtitle="Leading the way in power distribution technology since 2018."
+    backgroundImage="https://cdn.pagesmith.app/3ebbed7b/images/IMG-20260226-WA0075-640-640.webp"
+  />
+  
+  <About />
+  <Features />
+  
+  <section class="py-24 bg-slate-900" data-ps="src/pages/about-us.astro:nr51od">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/about-us.astro:t2q5o">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center" data-ps="src/pages/about-us.astro:t2q5p">
+        <div data-ps="src/pages/about-us.astro:t2q5q">
+          <h2 class="text-3xl font-black text-white mb-6" data-ps="src/pages/about-us.astro:82sm7k">Our Mission</h2>
+          <p class="text-slate-300 text-lg leading-relaxed mb-6" data-ps="src/pages/about-us.astro:2vbdrz">
+            To provide reliable, high-efficiency transformer solutions that empower communities and industries across Africa. We believe in sustainable energy infrastructure that stands the test of time.
+          </p>
+          <h2 class="text-3xl font-black text-white mb-6" data-ps="src/pages/about-us.astro:82sm7j">Our Vision</h2>
+          <p class="text-slate-300 text-lg leading-relaxed" data-ps="src/pages/about-us.astro:99a6i1">
+            To be the premier transformer manufacturer in West Africa, known for innovation, quality, and unwavering customer support.
+          </p>
+        </div>
+        <div class="relative" data-ps="src/pages/about-us.astro:t2q5r">
+          <div class="absolute -inset-4 bg-[#E85D1A]/20 rounded-xl blur-xl" data-ps="src/pages/about-us.astro:t2q5s"></div>
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&w=800&q=80" 
+            alt="Office team" 
+            class="relative rounded-xl border border-slate-700 shadow-2xl" data-ps="src/pages/about-us.astro:t268hm" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <QuotationRequest />
+</BaseLayout>

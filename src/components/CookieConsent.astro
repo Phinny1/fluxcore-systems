@@ -1,0 +1,65 @@
+---
+---
+
+<div
+  id="cookie-consent"
+  class="fixed bottom-0 left-0 right-0 z-50 p-4 transform translate-y-full transition-transform duration-500 ease-in-out hidden"
+ data-ps="src/components/CookieConsent.astro:prc6ko">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/CookieConsent.astro:prc6kn">
+    <div class="bg-white border border-slate-200 shadow-2xl rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6" data-ps="src/components/CookieConsent.astro:prc6km">
+      <div class="flex-1" data-ps="src/components/CookieConsent.astro:prc6kl">
+        <h3 class="text-lg font-semibold text-slate-900 mb-2" data-ps="src/components/CookieConsent.astro:uwf94x">Cookie Settings</h3>
+        <p class="text-slate-600 text-sm leading-relaxed" data-ps="src/components/CookieConsent.astro:wqxs5k">
+          We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies. Read our <a href="/cookie-policy/" class="text-[#e85d1a] hover:underline" data-ps="src/components/CookieConsent.astro:wiok4r">Cookie Policy</a> for more details.
+        </p>
+      </div>
+      <div class="flex items-center gap-4 shrink-0" data-ps="src/components/CookieConsent.astro:prc6kk">
+        <button
+          id="reject-cookies"
+          class="px-6 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors cursor-pointer"
+         data-ps="src/components/CookieConsent.astro:o4jsx1">
+          Reject
+        </button>
+        <button
+          id="accept-cookies"
+          class="px-6 py-2.5 text-sm font-medium text-slate-900 bg-[#e85d1a] hover:bg-[#d45217] rounded-lg transition-colors shadow-lg shadow-[#e85d1a]/20 cursor-pointer"
+         data-ps="src/components/CookieConsent.astro:o4jsx0">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const consent = localStorage.getItem('cookie-consent');
+  const banner = document.getElementById('cookie-consent');
+  const acceptBtn = document.getElementById('accept-cookies');
+  const rejectBtn = document.getElementById('reject-cookies');
+
+  if (!consent && banner) {
+    banner.classList.remove('hidden');
+    setTimeout(() => {
+      banner.classList.remove('translate-y-full');
+    }, 100);
+  }
+
+  function hideBanner() {
+    if (banner) {
+      banner.classList.add('translate-y-full');
+      setTimeout(() => {
+        banner.classList.add('hidden');
+      }, 500);
+    }
+  }
+
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    hideBanner();
+  });
+
+  rejectBtn?.addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'rejected');
+    hideBanner();
+  });
+</script>

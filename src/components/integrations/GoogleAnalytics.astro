@@ -1,0 +1,21 @@
+---
+const measurementId = 'G-Y57DMTDE94';
+---
+
+{measurementId && (
+  <>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} />
+    <script define:vars={{ measurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', measurementId, {
+        anonymize_ip: true,
+        ...(navigator.doNotTrack === '1' && { send_page_view: false }),
+      });
+      window.gtag = gtag;
+    </script>
+  </>
+)}
