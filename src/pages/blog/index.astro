@@ -28,9 +28,10 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
           {sortedPosts.map((post) => (
             <a href={`/blog/${post.slug}/`} class="group block bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-[#E85D1A]/50 transition-all hover:-translate-y-1 shadow-sm hover:shadow-md" data-ps="src/pages/blog/index.astro:d4ikzp">
               <div class="aspect-video overflow-hidden" data-ps="src/pages/blog/index.astro:z9lr8m">
-                <img 
-                  src={post.data.image || "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&w=800&q=80"} 
+                <img
+                  src={post.data.image || "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&w=800&q=80"}
                   alt={post.data.title}
+                  loading="lazy"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-ps="src/pages/blog/index.astro:5ecsla" />
               </div>
               <div class="p-6 flex flex-col flex-grow" data-ps="src/pages/blog/index.astro:z9lr8n">
