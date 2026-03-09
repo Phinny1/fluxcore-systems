@@ -37,7 +37,7 @@ const slug = pathname === '/' ? 'index' : pathname.replace(/^\/|\/$/g, '');
 
 const autoImage = (ACCOUNT_ID && SITE_ID)
   ? `${OG_IMAGE_CDN_URL}/${ACCOUNT_ID}/${SITE_ID}/${slug}-og.png`
-  : `/${slug === 'index' ? 'home' : slug.split('/')[0]}-og.jpg`;
+  : `/${slug === 'index' ? 'home' : slug.split('/')[0]}-og.jpg`h;
 const finalImage = image || autoImage;
 
 // Use provided canonical URL or generate from current path
@@ -48,7 +48,7 @@ const ogImageURL = finalImage.startsWith('http') ? finalImage : new URL(finalIma
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="generator" content={Astro.generator} />
-<meta name="description" content={description} />
+<meta name="description" content={description} /><link rel="preload" as="image" href="https://cdn.pagesmith.app/3ebbed7b/images/Elsan-Transformer-2-1024-1024.webp" type="image/webp" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={finalCanonicalURL} />
