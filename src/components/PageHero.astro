@@ -28,7 +28,7 @@ const breadcrumbs = [
 
 <section class="relative py-32 flex items-center bg-slate-950 overflow-hidden" data-ps="src/components/PageHero.astro:bmy8te">
   <div class="absolute inset-0 z-0" data-ps="src/components/PageHero.astro:hr8ppx">
-    <img crossorigin="anonymous" src={backgroundImage}
+    <img crossorigin="anonymous" src={backgroundImage} loading="eager" fetchpriority="high"
       srcset={srcset}
       sizes={sizes}
       alt="Background"
