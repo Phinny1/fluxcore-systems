@@ -11,7 +11,7 @@
   const {
     companyName = SITE.name,
     companyDescription = SITE.description,
-    copyright = `© 2026 Elsan Transformer. All rights reserved. | Turkish manufacturer of power and distribution transformers for Nigeria & West Africa — 25 kVA to 50 MVA | IEC 60076 Certified`
+    copyright = `© 2026 Elsan Transformer. All rights reserved. | Turkish manufacturer of power and distribution transformers for Nigeria & West Africa — 25 kVA to 40 MVA | IEC 60076 Certified`
   } = Astro.props;
   ---
 
@@ -20,7 +20,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16" data-ps="src/components/Footer.astro:p4vf88">
         <!-- Company Info -->
         <div class="lg:col-span-2" data-ps="src/components/Footer.astro:p4vf89">
-          <p class="text-2xl font-black tracking-tighter text-white mb-6 flex items-center gap-2 uppercase" data-ps="src/components/Footer.astro:f0091g">ELSAN TRANSFORMER</p>
+          <h2 class="text-2xl font-black tracking-tighter text-white mb-6 flex items-center gap-2 uppercase" data-ps="src/components/Footer.astro:f0091g">ELSAN TRANSFORMER</h2>
           <p class="text-base text-slate-400 max-w-2xl leading-relaxed mb-8" data-ps="src/components/Footer.astro:euok">
             Elsan Transformer is a Turkish manufacturer of high-efficiency power and distribution transformers — bringing internationally certified engineering excellence to utilities, DISCOs, industrial plants, and infrastructure projects across Nigeria and West Africa since 2018. Manufactured in Turkey to IEC 60076 and ISO 9001 standards.
           </p>
@@ -37,7 +37,7 @@
 
         <!-- Quick Links -->
         <div data-ps="src/components/Footer.astro:footer-solutions">
-          <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:h-solutions">PRODUCTS</p>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:h-solutions">PRODUCTS</h2>
           <ul class="list-none p-0 m-0 flex flex-col gap-3">
             <li data-ps="src/components/Footer.astro:sq28dh"><a href="/#products" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:8o2pj">Distribution Transformers (25 kVA – 2500 kVA)</a></li>
             <li data-ps="src/components/Footer.astro:sq28dg"><a href="/#products" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:8o2pk">Power Transformers (3.15 MVA – 50 MVA)</a></li>
@@ -50,14 +50,14 @@
 
         <!-- Support -->
         <div data-ps="src/components/Footer.astro:p4vf8a">
-          <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:f0091f">Company</p>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:f0091f">Company</h2>
           <ul class="list-none p-0 m-0 flex flex-col gap-3">
-            <li data-ps="src/components/Footer.astro:wyji7c"><a href="/about-us/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0k">About Elsan Transformer</a></li>
-            <li data-ps="src/components/Footer.astro:wyji7d"><a href="/#advantages" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0l">Why Choose Us</a></li>
-            <li data-ps="src/components/Footer.astro:wyji7e"><a href="/#industries" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0m">Industries We Serve</a></li>
-            <li data-ps="src/components/Footer.astro:wyji7f"><a href="/#faq" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0n">FAQ</a></li>
-            <li data-ps="src/components/Footer.astro:wyji7g"><a href="/about-us/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0o">Quality & ISO Certification</a></li>
-            <li data-ps="src/components/Footer.astro:wyji7h"><a href="/contact/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0p">After-Sales Support</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7c"><a href="/#about" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0k">About Elsan Transformer</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7d"><a href="/#quality" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0l">Why Choose Us</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7e"><a href="/#compliance" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0m">Industries We Serve</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7f"><a href="/#engineering" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0n">FAQ</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7g"><a href="/#support" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0o">Quality & ISO Certification</a></li>
+            <li data-ps="src/components/Footer.astro:wyji7h"><a href="/#contact" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0p">After-Sales Support</a></li>
             <li data-ps="src/components/Footer.astro:wyji7i"><a href="/privacy-policy/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0q">Privacy Policy</a></li>
             <li data-ps="src/components/Footer.astro:wyji7j"><a href="/cookie-policy/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0r">Cookie Policy</a></li>
             <li data-ps="src/components/Footer.astro:wyji7k"><a href="/sitemap/" class="text-sm text-slate-300 no-underline hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0s">Sitemap</a></li>
@@ -66,11 +66,11 @@
 
         <!-- Contact Us -->
         <div data-ps="src/components/Footer.astro:contact-col">
-          <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:h-contact">Contact Us</p>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6" data-ps="src/components/Footer.astro:h-contact">Contact Us</h2>
           <ul class="list-none p-0 m-0 flex flex-col gap-4">
             <li class="flex items-start gap-3" data-ps="src/components/Footer.astro:c-phone">
               <span class="text-[#E85D1A] text-lg" data-ps="src/components/Footer.astro:hzwfph">📞</span>
-              <a href="tel:+2348033142634" class="text-sm text-slate-300 hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0l">+234 803 314 2634</a>
+              <a href="tel:+2340000000000" class="text-sm text-slate-300 hover:text-white transition-colors" data-ps="src/components/Footer.astro:7gqc0l">+234 (0) 000 000 0000</a>
             </li>
             <li class="flex items-start gap-3" data-ps="src/components/Footer.astro:c-wa">
               <span class="text-green-500 text-lg" data-ps="src/components/Footer.astro:hzwfpg">💬</span>
